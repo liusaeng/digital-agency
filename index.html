@@ -1,36 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--Dev1-->
     <section></section>
 
     <!--Dev2-->
-    <section></section>
+    <section class="flex items-center justify-center gap-24 py-24 px-12">
+      <!-- Graphics Column -->
+      <div class="relative w-[600px] h-[650px] flex-shrink-0">
+        <!-- Orange/Yellow Circle -->
+        <div class="bg-[#FFAD1E] rounded-full w-[590px] h-[590px] absolute top-0 right-0"></div>
+        
+        <!-- Grey Rounded Rectangle -->
+        <div class="bg-[#C4C4C4] rounded-[10px] z-10 w-[570px] h-[600px] absolute bottom-0 left-0 shadow-md"></div>
+        
+        <!-- Overlapping Card -->
+        <div class="absolute bottom-8 right-[-20px] z-20 bg-white shadow-xl rounded-xl p-5 w-[250px]">
+          <p class="text-xs font-bold text-gray-800 mb-3">People Who Trusted Us!</p>
+          <div class="flex -space-x-3">
+            <div class="w-10 h-10 rounded-full bg-[#C4C4C4] border-4 border-white shadow-sm"></div>
+            <div class="w-10 h-10 rounded-full bg-[#C4C4C4] border-4 border-white shadow-sm"></div>
+            <div class="w-10 h-10 rounded-full bg-[#C4C4C4] border-4 border-white shadow-sm"></div>
+            <div class="w-10 h-10 rounded-full bg-[#C4C4C4] border-4 border-white shadow-sm"></div>
+            <div class="w-10 h-10 rounded-full bg-[#D6E4F0] border-4 border-white flex items-center justify-center text-sm font-bold text-[#3B4C9B] shadow-sm">+</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text & Content Column -->
+      <div class="max-w-[500px]">
+        <h1 class="text-5xl font-extrabold text-[#1A2E5A] leading-[1.2] mb-6">
+          Make Your Website Design more Creative & Professional!
+        </h1>
+        <p class="text-gray-500 text-[15px] leading-[1.6] mb-8">
+          Professionally evolve web-enabled resources and error-free . Interactively provide access to unique architectures rather than customized functionalities. Enthusiastically maintain user friendly processes through scalable process improvements. Conveniently foster mission-critical collaboration and idea-sharing
+        </p>
+        <button class="bg-[#3B4C9B] hover:bg-[#2F3D7D] text-white font-semibold px-8 py-3.5 rounded-lg transition duration-200 shadow-md">
+          Learn More
+        </button>
+      </div>
+    </section>
 
     <!--Dev3-->
     <section></section>
 
     <!--Dev4-->
     <section></section>
-
-
-</body>
+  </body>
 </html>
