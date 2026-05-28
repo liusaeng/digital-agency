@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -64,7 +62,9 @@
             ></div>
             <div
               class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-[#D6E4F0] border-[0.58px] border-white flex items-center justify-center text-[10px] md:text-sm font-bold text-[#3B4C9B] shadow-sm"
-            >+</div>
+            >
+              +
+            </div>
           </div>
         </div>
       </div>
@@ -83,7 +83,11 @@
         <p
           class="text-[#5F6D7E] text-sm md:text-[15px] lg:text-[18px] leading-[1.7] mb-8"
         >
-        Professionally evolve web-enabled resources and error-free . Interactively provide access to unique architectures rather than customized functionalities. Enthusiastically maintain user friendly processes through scalable process improvements. Conveniently foster mission-critical collaboration and idea-sharing
+          Professionally evolve web-enabled resources and error-free .
+          Interactively provide access to unique architectures rather than
+          customized functionalities. Enthusiastically maintain user friendly
+          processes through scalable process improvements. Conveniently foster
+          mission-critical collaboration and idea-sharing
         </p>
         <button
           class="bg-[#3B4C9B] hover:bg-[#2F3D7D] text-white text-[13px] font-bold tracking-wide px-7 py-3.5 rounded-[6px] transition duration-200 w-fit shadow-sm"
@@ -95,7 +99,7 @@
 
     <!-- 2nd Section: Text Left, Graphics Right (Column order reversed on mobile so Graphics goes on top) -->
     <section
-    class="flex flex-col lg:flex-row items-center justify-center lg:gap-30 py-12 lg:py-28 px-6 lg:px-16 max-w-full mx-auto"
+      class="flex flex-col lg:flex-row items-center justify-center lg:gap-30 py-12 lg:py-28 px-6 lg:px-16 max-w-full mx-auto"
     >
       <!-- Text & Content Column -->
       <div
