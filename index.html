@@ -14,10 +14,11 @@
       };
     </script>
     <title>Document</title>
-  </head>
-  <body>
+</head>
+<body class="m-0 p-0 font-sans leading-normal text-[#183B56] bg-white antialiased">
+
     <!--Dev1-->
-    <section></section>
+    <section></section>   
 
     <!--Dev2-->
     <!-- 1st Section: Graphics Left, Text Right -->
@@ -180,9 +181,225 @@
     </section>
 
     <!--Dev3-->
-    <section></section>
+<!-- === SECTION 1: BLOG CARDS === -->
+<section class="px-4 pb-14 pt-2 sm:px-5 sm:pb-16 sm:pt-6">
+  <div class="mx-auto max-w-[1120px]">
+    
+    <!-- Heading -->
+    <h3 class="text-center mt-12 text-3xl font-black leading-tight sm:text-[44px] lg:text-[50px] sm:leading-[1.15]">
+      Read Our Blog
+    </h3>
+    
+    <!-- Cards Container -->
+    <div class="card-container mt-8 grid grid-cols-1 gap-6 sm:mt-10 sm:gap-8 lg:grid-cols-3 items-stretch justify-center">
+      
+      <!-- Card 1: Design -->
+      <div class="cardDesign w-full p-8 bg-[#F8FCFD] rounded-xl flex flex-col justify-between shadow-sm">
+        <div>
+          <!-- Image Placeholder -->
+          <div class="w-full h-44 bg-[#C4C4C4] rounded-lg mb-3"></div>
+          <!-- Category -->
+          <div class="card-title font-medium text-[18px] lg:text-[16px] leading-[28px] text-[#5A7184] mb-1">Design</div>
+          <!-- Title -->
+          <div class="card-text font-bold text-xl leading-snug sm:text-[24px] sm:leading-[34px] lg:text-[20px] lg:leading-[26px] text-[#183B56] mb-4">
+            How great Content helps <br/>
+            drive success in <br class="sm:hidden"/> Marketplace
+          </div>
+        </div>
+        <!-- Action Link -->
+        <a href="#" class="inline-flex items-center flex-nowrap whitespace-nowrap gap-1.5 text-[#404C99] font-bold text-[16px] lg:text-sm pl-1 hover:underline mt-auto">
+          Read More
+          <svg class="w-4 h-4 lg:w-3.5 lg:h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+          </svg>
+        </a>  
+      </div>
 
-    <!--Dev4-->
-    <section></section>
-  </body>
+      <!-- Card 2: Marketing -->
+      <div class="cardMarketing w-full p-8 bg-[#F8FCFD] rounded-xl flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="w-full h-44 bg-[#C4C4C4] rounded-lg mb-3"></div>
+          <div class="card-title font-medium text-[18px] lg:text-[16px] leading-[28px] text-[#5A7184] mb-1">Marketing</div>
+          
+          <div class="card-text font-bold text-xl leading-snug sm:text-[24px] sm:leading-[34px] lg:text-[20px] lg:leading-[26px] text-[#183B56] mb-4">
+            Strossie international AB <br/>
+            ranked #1 on Deloitte <br class="sm:hidden"/> 2018
+          </div>
+        </div>
+        <a href="#" class="inline-flex items-center flex-nowrap whitespace-nowrap gap-1.5 text-[#404C99] font-bold text-[16px] lg:text-sm pl-1 hover:underline mt-auto">
+          Read More
+          <svg class="w-4 h-4 lg:w-3.5 lg:h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+          </svg>
+        </a>  
+      </div>
+
+      <!-- Card 3: Development -->
+      <div class="cardDevelopment w-full p-8 bg-[#F8FCFD] rounded-xl flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="w-full h-44 bg-[#C4C4C4] rounded-lg mb-3"></div>
+          <div class="card-title font-medium text-[18px] lg:text-[16px] leading-[28px] text-[#5A7184] mb-1">Development</div>
+          
+          <div class="card-text font-bold text-xl leading-snug sm:text-[24px] sm:leading-[34px] lg:text-[20px] lg:leading-[26px] text-[#183B56] mb-4">
+            What All Marketers <br class="sm:hidden"/> Should <br class="hidden sm:block"/> 
+            Know About <br class="sm:hidden"/> Brand Safe
+          </div>
+        </div>
+        <a href="#" class="inline-flex items-center flex-nowrap whitespace-nowrap gap-1.5 text-[#404C99] font-bold text-[16px] lg:text-sm pl-1 hover:underline mt-auto">
+          Read More
+          <svg class="w-4 h-4 lg:w-3.5 lg:h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+          </svg>
+        </a>  
+      </div>
+
+    </div>   
+  </div>
+</section>
+
+<!-- === SECTION 2: TESTIMONIAL === -->
+<section>
+  <!-- Background Images -->
+  <div class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 w-full h-full sm:hidden">
+      <img 
+       src="background2.svg" 
+       alt="Mobile Portrait Background"
+       class="absolute inset-0 m-auto w-full h-full object-cover z-0 pointer-events-none"
+      />
+    </div>
+      <img 
+       src="background1.svg" 
+       alt="Background Desktop" 
+       class="absolute inset-0 w-full h-full object-cover z-5 scale-x-70 scale-y-70 hidden sm:block"
+      />
+  
+   <!-- Content Container -->
+   <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-white p-6">
+    <!-- Quote Text -->
+    <div class="title font-bold text-xl leading-relaxed sm:text-[30px] sm:leading-[60px] text-center text-[#183B56]">
+      “I’ve completed <br class="sm:hidden"/> 
+      support from my <br class="sm:hidden"/>
+      Agency  about 1 <br class="hidden sm:block"/> 
+      years <br class="sm:hidden"/> ago. Their make the <br class="sm:hidden"/>
+      prototyping process so <br/>
+      easy and faster. I feel <br class="sm:hidden"/>
+      this is the best apps for <br/>
+      the prototyping use”
+    </div>
+  
+   <!-- User Info -->
+    <div class="title text-sm sm:text-[18px] leading-relaxed sm:leading-[36px] text-center">
+      <span class="font-bold text-[#00B6ED]">William Smith</spans><br/>
+      <span class="text-[#5B6B79]">CEO f ZaVad Company</span>
+    </div>
+   </div>
+ </div>
+</section>
+
+    <!--Dev4 testimnial-section -->
+    <section> 
+      <div class="max-w-6xl mx-auto px-4 py-12">
+    
+        <!-- ### Section: Subscribe Box -->
+        <div class="bg-[#29B6F6] rounded-3xl p-8 md:p-16 text-center text-white mb-16 shadow-lg">
+          <h2 class="text-2xl md:text-4xl font-bold mb-6">Subscribe Now for<br class="sm:hidden"> Get Special Features!</h2>
+          
+          <!-- Input Form -->
+          <div class="max-w-xl mx-auto bg-white rounded-full p-2 flex items-center justify-between shadow-sm">
+            <input 
+              type="email" 
+              placeholder="Enter Your Email" 
+              class="w-full pl-4 text-gray-700 placeholder-gray-400 focus:outline-none text-sm md:text-base"
+            >
+            <button class="bg-[#3F51B5] hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-full flex items-center gap-2 text-sm md:text-base transition-colors shrink-0">
+              Submit <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+    
+        <!-- ### Section: Footer Links -->
+        <footer class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-gray-600 text-sm border-b border-gray-100 pb-12">
+          
+          <!-- Column 1: Brand Info -->
+          <div class="md:col-span-1">
+            <h3 class="text-[#3F51B5] text-2xl font-bold mb-4">Agency</h3>
+            <p class="leading-relaxed mb-6 text-gray-500">
+              Professionally scale cross functional human capital and extensive technology.
+            </p>
+            <!-- Social Icons -->
+            <div class="flex gap-3">
+              <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-[#3F51B5] hover:text-white transition-colors">
+                <img src="google-icon.png" class="Google-icon text-xs">
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-[#3F51B5] hover:text-white transition-colors">
+                <img src="twitter-icon.png" class="Twiter-icon text-xs">
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-[#3F51B5] hover:text-white transition-colors">
+                <img src="ig-icon.png" class="Ig-icon text-xs">
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-[#3F51B5] hover:text-white transition-colors">
+                <img src="in-icon.png" class="in-icon text-xs">
+              </a>
+            </div>
+          </div>
+    
+          <!-- Column 2: Services -->
+          <div>
+            <h4 class="font-bold text-gray-800 mb-4">Services</h4>
+            <ul class="space-y-3 text-gray-500">
+              <li><a href="#" class="hover:text-[#3F51B5]">Design</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Development</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Marketing</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Content Writing</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 3: Company -->
+          <div>
+            <h4 class="font-bold text-gray-800 mb-4">Company</h4>
+            <ul class="space-y-3 text-gray-500">
+              <li><a href="#" class="hover:text-[#3F51B5]">About</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Terms</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Careers</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 4: Portfolio -->
+          <div>
+            <h4 class="font-bold text-gray-800 mb-4">Portfolio</h4>
+            <ul class="space-y-3 text-gray-500">
+              <li><a href="#" class="hover:text-[#3F51B5]">Portfolio</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Single Case</a></li>
+              <li><a href="#" class="hover:text-[#3F51B5]">Payment</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 5: Contact -->
+          <div>
+            <h4 class="font-bold text-gray-800 mb-4">Contact</h4>
+            <ul class="space-y-3 text-gray-500">
+              <li><span class="font-medium text-gray-700">Call :</span> 971 5546 963</li>
+              <li><span class="font-medium text-gray-700">Email :</span> exampla@gmail.com</li>
+              <li><span class="font-medium text-gray-700">Address :</span> Dhaka, Bangladesh</li>
+            </ul>
+          </div>
+    
+        </footer>
+    
+        <!-- ### Section: Copyright -->
+        <div class="pt-6 text-sm text-gray-400">
+          Copyright©Agency.All right reserved
+        </div>
+    
+      </div>
+       
+
+
+
+    </section>
+
+
+</body>
 </html>
