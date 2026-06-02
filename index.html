@@ -1,20 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
     <title>Document</title>
 </head>
 <body class="m-0 p-0 font-sans leading-normal text-[#183B56] bg-white antialiased">
@@ -23,8 +21,165 @@
     <section></section>   
 
     <!--Dev2-->
-    <section></section>
-    
+    <!-- 1st Section: Graphics Left, Text Right -->
+    <section
+      class="flex flex-col lg:flex-row items-center justify-center lg:gap-20 py-12 lg:py-18 px-8 lg:px-8 max-w-full mx-auto"
+    >
+      <!-- Graphics Column -->
+      <div
+        class="relative w-[320px] h-[340px] md:w-[480px] md:h-[510px] lg:w-[620px] lg:h-[650px] flex-shrink-0 m-8"
+      >
+        <!-- Orange/Yellow Circle -->
+        <div
+          class="bg-[#FFAD1E] rounded-full w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[591.47px] lg:h-[591.47px] absolute top-0 right-10 lg:right-8"
+        ></div>
+
+        <!-- Grey Rounded Rectangle -->
+        <div
+          class="bg-[#C4C4C4] rounded-[10px] z-10 w-[290px] h-[310px] md:w-[430px] md:h-[460px] lg:w-[573.72px] lg:h-[600px] absolute top-6 md:top-9 lg:top-10 left-0 shadow-md"
+        ></div>
+
+        <!-- Overlapping Card -->
+        <div
+          class="absolute -bottom-3 right-[-10px] md:bottom-5 md:right-[-15px] lg:-bottom-12 lg:-right-20 z-20 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-xl md:rounded-2xl p-3 md:p-5 lg:p-6 w-[150px] md:w-[220px] lg:w-[260px] border border-slate-100/50 shadow-md"
+        >
+          <p
+            class="text-[9px] md:text-[11px] lg:text-[13px] font-bold text-[#0E2A52] mb-1.5 md:mb-3"
+          >
+            People Who Trusted Us!
+          </p>
+          <div class="flex -space-x-1.5 md:-space-x-3">
+            <div
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-[#C4C4C4] border-[0.58px] border-white"
+            ></div>
+            <div
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-[#C4C4C4] border-[0.58px] border-white"
+            ></div>
+            <div
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-[#C4C4C4] border-[0.58px] border-white"
+            ></div>
+            <div
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-[#C4C4C4] border-[0.58px] border-white"
+            ></div>
+            <div
+              class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-[#D6E4F0] border-[0.58px] border-white flex items-center justify-center text-[10px] md:text-sm font-bold text-[#3B4C9B] shadow-sm"
+            >
+              +
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text & Content Column -->
+      <div
+        class="max-w-xl flex flex-col justify-center items-start text-left w-full"
+      >
+        <h1
+          class="text-[28px] md:text-[36px] lg:text-[50px] leading-[1.2] font-extrabold text-[#0E2A52] tracking-tight mb-6"
+        >
+          Make Your Website<br class="hidden md:inline" />
+          Design more Creative<br class="hidden md:inline" />
+          & Professional!
+        </h1>
+        <p
+          class="text-[#5F6D7E] text-sm md:text-[15px] lg:text-[18px] leading-[1.7] mb-8"
+        >
+          Professionally evolve web-enabled resources and error-free .
+          Interactively provide access to unique architectures rather than
+          customized functionalities. Enthusiastically maintain user friendly
+          processes through scalable process improvements. Conveniently foster
+          mission-critical collaboration and idea-sharing
+        </p>
+        <button
+          class="bg-[#3B4C9B] hover:bg-[#2F3D7D] text-white text-[13px] font-bold tracking-wide px-7 py-3.5 rounded-[6px] transition duration-200 w-fit shadow-sm"
+        >
+          Learn More
+        </button>
+      </div>
+    </section>
+
+    <!-- 2nd Section: Text Left, Graphics Right (Column order reversed on mobile so Graphics goes on top) -->
+    <section
+      class="flex flex-col lg:flex-row items-center justify-center lg:gap-30 py-12 lg:py-28 px-6 lg:px-16 max-w-full mx-auto"
+    >
+      <!-- Text & Content Column -->
+      <div
+        class="max-w-[540px] flex flex-col order-2 lg:order-1 justify-center items-start text-left w-full"
+      >
+        <h1
+          class="text-[28px] md:text-[36px] lg:text-[44px] leading-[1.2] font-extrabold text-[#0E2A52] tracking-tight mb-6"
+        >
+          Development Make<br class="hidden md:inline" />
+          Flexible foy Your<br class="hidden md:inline" />
+          Best Demand!
+        </h1>
+        <p class="text-[#5F6D7E] text-sm md:text-[15px] leading-[1.7] mb-8">
+          Professionally evolve web-enabled resources and error-free .
+          Interactively provide access to unique architectures rather than
+          customized functionalities. Enthusiastically maintain user friendly
+          processes through scalable process improvements. Conveniently foster
+          mission-critical collaboration and idea-sharing
+        </p>
+        <button
+          class="bg-[#3B4C9B] hover:bg-[#2F3D7D] text-white text-[13px] font-bold tracking-wide px-7 py-3.5 rounded-[6px] transition duration-200 w-fit shadow-sm"
+        >
+          Learn More
+        </button>
+      </div>
+
+      <!-- Graphics Column -->
+      <div
+        class="relative order-1 lg:order-2 m-8 w-[320px] h-[340px] md:w-[480px] md:h-[510px] lg:w-[620px] lg:h-[650px] flex-shrink-0"
+      >
+        <!-- Concentric Outline Circle -->
+        <div
+          class="border border-slate-200 rounded-full lg:w-[635.83px] lg:h-[635.83px] absolute lg:top-[10px] lg:right-0 z-3"
+        ></div>
+
+        <!-- Orange/Coral Circle -->
+        <div
+          class="bg-[#FF5B37] rounded-full w-[300px] h-[300px] md:w-[450px] md:h-[450px] lg:w-[590px] lg:h-[590px] absolute top-0 right-0 lg:right-10"
+        ></div>
+
+        <!-- Grey Rounded Rectangle -->
+        <div
+          class="bg-[#C4C4C4] rounded-[10px] z-10 w-[290px] h-[310px] md:w-[430px] md:h-[460px] lg:w-[530px] lg:h-[650px] absolute top-6 md:top-9 lg:top-12 left-0 shadow-md"
+        ></div>
+
+        <!-- Overlapping Card -->
+        <div
+          class="absolute -bottom-3 right-[10px] md:-bottom-5 md:right-[15px] lg:-bottom-20 lg: right-[20px] z-20 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-xl md:rounded-2xl p-3 md:p-5 lg:p-6 w-[150px] md:w-[220px] lg:w-[260px] border border-slate-100/50 flex items-center gap-2 md:gap-3 lg:gap-4 shadow-md"
+        >
+          <!-- Semi-circular Chart representation -->
+          <div
+            class="relative w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 flex items-center justify-center flex-shrink-0"
+          >
+            <div
+              class="absolute inset-0 rounded-full border-2 md:border-4 border-slate-100"
+            ></div>
+            <div
+              class="absolute inset-0 rounded-full border-2 md:border-4 border-[#FF6D24] border-t-transparent border-l-transparent"
+            ></div>
+            <span
+              class="text-[#FF6D24] font-black text-xs md:text-sm lg:text-lg select-none"
+              >$</span
+            >
+          </div>
+          <!-- Card details -->
+          <div class="flex flex-col">
+            <span
+              class="text-[9px] md:text-xs text-gray-400 font-semibold tracking-wide"
+              >Investment</span
+            >
+            <span
+              class="text-xs md:text-base lg:text-lg font-bold text-[#0E2A52] mt-0.5"
+              >€ 25,000</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--Dev3-->
 <!-- === SECTION 1: BLOG CARDS === -->
 <section class="px-4 pb-14 pt-2 sm:px-5 sm:pb-16 sm:pt-6">
